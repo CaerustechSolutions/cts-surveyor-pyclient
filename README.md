@@ -11,11 +11,10 @@ Here is how to use the solution:
 
 1. Unzip the surveyor.zip
 2. Make sure you have Python 3.5 or later
-3. Install the following dependencies
-    pip install websocket-client
-    pip install requests
-4. Clone this repo
-5. Start surveyor.exe from where you unpackaged surveyor.zip
-6. Run "python test_notifier.py" to receive notification events regarding detected people
-7. Run "python test_client.py" to invoke API's (such as to enable/disable detection, as well as to retrieve statistics)
-8. Enjoy the detecting/classifiying faces and people!
+3. pip install websocket-client
+4. pip install requests
+5. Clone this repo
+6. Start surveyor.exe from where you unpackaged surveyor.zip
+7. Run "python test_notifier.py" to receive notification events regarding detected people
+8. Run "python test_client.py" to invoke API's (such as to enable/disable detection, as well as to retrieve statistics)
+9. Enjoy detecting/classifiying faces and people!
