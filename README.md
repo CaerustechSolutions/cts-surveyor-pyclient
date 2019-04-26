@@ -1,5 +1,5 @@
 # cts-surveyor-pyclient
-Python client for facial detection, age / gender classification and people detection / counting
+## Python client for facial detection, age / gender classification and people detection / counting
 
 This client uses the CTS Surveyor server that can run locally and allow you to classify people by age and gender, as well as track people that are moving in front of the camera. You will need to download CTS surveyor from the following link to perform people detection and classification:
 
