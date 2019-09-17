@@ -3,18 +3,22 @@ from notification import Notification
 
 
 def on_event_received (notification):
-    
-    print ('received: ' + str(len(notification.events)) + ' events')
+
     if len(notification.events) > 0:
-        print ('event: ' + notification.events[0].event_type)
         if (notification.events[0].event_type == 'people_update'):
             i = 0
             while i < len(notification.events[0].people):
-                print ('id: ' + str(notification.events[0].people[i].id))
-                print ('gender: ' + notification.events[0].people[i].gender)
-                print ('age: ' + notification.events[0].people[i].age)
-                print ('rectangle: ' + str(notification.events[0].people[i].rectangle))
+                print ('person coordinates: ' + str(notification.events[0].people[i].rectangle))
                 i += 1
+            i = 0
+            while i < len(notification.events[0].faces):
+                print ('************ face analyzed *************')
+                print ('gender: ' + notification.events[0].faces[i].gender)
+                print ('age lower: ' + str(notification.events[0].faces[i].ageLower))
+                print ('age upper: ' + str(notification.events[0].faces[i].ageUpper))
+                print ('****************************************')
+                i += 1
+                               
     
     
 def start_notifier(notifier):

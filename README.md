@@ -18,3 +18,10 @@ Here is how to use the solution:
 7. Run "python test_notifier.py" to receive notification events regarding detected people
 8. Run "python test_client.py" to invoke API's (such as to enable/disable detection, as well as to retrieve statistics)
 9. Enjoy detecting/classifiying faces and people!
+
+
+Dependencies:
+
+pip install websocket_client
+
+pip install requests
